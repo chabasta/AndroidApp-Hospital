@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".doctor.PacientsDoctorActivity"
+    android:background="@color/background"
+    >
+
+
+
+    <!--    tool bar (top bar )-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_nav_bar"
+        app:title="@string/pacients_title"
+        app:titleTextColor="@color/white"
+        app:menu="@menu/toolbar_menu"
+        />
+    <!--========================================================-->
+
+
+    <TextView
+        android:id="@+id/patient_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:textColor="@color/white"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Patients:"
+        android:textSize="24dp"
+
+        />
+
+    <Button
+        android:id="@+id/btn_patient_create_new_patient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="20dp"
+        android:textSize="13dp"
+        android:backgroundTint="@color/pink"
+        android:text="Create new patient" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_patients_view"
+        android:layout_width="330dp"
+        android:layout_height="550dp"
+        android:layout_below="@+id/patient_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_nav_doctor"
+        app:itemBackground="@color/background_nav_bar"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/doctor_bottom_menu"
+        android:layout_alignParentBottom="true"
+        app:labelVisibilityMode="labeled"
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".doctor.PatientDayPills"
+    android:background="@color/background"
+
+    >
+
+
+    <!--    tool bar (top bar )-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_nav_bar"
+        app:menu="@menu/toolbar_menu"
+        app:title="Days"
+        app:titleTextColor="@color/white" />
+    <!--========================================================-->
+
+
+    <TextView
+        android:id="@+id/room_edit_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:text="Days:"
+        android:textColor="@color/white"
+        android:textSize="24dp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_day_pils_view"
+        android:layout_width="330dp"
+        android:layout_height="400dp"
+        android:layout_below="@+id/room_edit_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/background_nav_bar"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/doctor_bottom_menu" />
+
+
+</RelativeLayout>

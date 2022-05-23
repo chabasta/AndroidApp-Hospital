@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/camera_activity_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".patient.Camera">
+
+
+    <!--    tool bar (top bar )-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        app:menu="@menu/toolbar_menu"
+        app:title="@string/camera_title"
+        app:titleTextColor="@color/white"
+
+
+        />
+    <!--========================================================-->
+
+
+    <TextView
+        android:id="@+id/roomKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/toolbar"
+        android:layout_marginStart="15dp"
+        android:paddingBottom="10dp"
+        android:text="Room: #"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/room"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/roomKey"
+        android:layout_marginStart="15dp"
+        android:paddingBottom="10dp"
+        android:text="---"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/stateKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/room"
+        android:layout_marginStart="15dp"
+        android:paddingBottom="10dp"
+        android:text="State:"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stateKey"
+        android:layout_marginStart="15dp"
+        android:paddingBottom="10dp"
+        android:text="---"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/btnScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/state"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/pink"
+        android:text="Scan" />
+
+
+    <TextView
+        android:id="@+id/negative_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnScan"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:text="try to scan another room"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/camera_from_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnScan"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:paddingBottom="10dp"
+        android:text="From:"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:visibility="invisible" />
+
+
+    <EditText
+        android:id="@+id/camera_date_from"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/camera_from_title"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/rounded_edittext"
+        android:focusable="false"
+        android:clickable="false"
+        android:hint="date from"
+        android:paddingStart="15dp"
+        android:visibility="invisible"
+        tools:ignore="Deprecated,RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/camera_to_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/camera_date_from"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:paddingBottom="10dp"
+        android:text="To:"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:visibility="invisible" />
+
+
+    <EditText
+        android:id="@+id/camera_date_to"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/camera_to_title"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/rounded_edittext"
+        android:focusable="false"
+        android:hint="date from"
+        android:clickable="false"
+        android:paddingStart="15dp"
+        android:visibility="invisible"
+        tools:ignore="RtlSymmetry" />
+
+    <Button
+        android:id="@+id/btn_reservate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/camera_date_to"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/pink"
+        android:enabled="false"
+        android:text="Reservate"
+        android:visibility="invisible" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav_patient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/background_nav_bar"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/patient_bottom_menu" />
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".doctor.PillsEdit">
+
+
+    <!--    tool bar (top bar )-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_nav_bar"
+        app:menu="@menu/toolbar_menu"
+        app:title="Day pills edit"
+        app:titleTextColor="@color/white" />
+    <!--========================================================-->
+
+
+    <TextView
+        android:id="@+id/pills_edit_day_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:text="Day"
+        android:textColor="@color/white"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/pills_edit_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/pills_edit_day_title"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/pills_edit_input_medicine"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pills_edit_day_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/dark_rounded_edittext"
+        android:drawableEnd="@drawable/ic_more_info"
+        android:drawableTint="@color/white"
+        android:focusable="false"
+        android:hint="Medicines"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_medicines_view_pills_edit_examples"
+        android:layout_width="330dp"
+        android:layout_height="140dp"
+        android:layout_below="@+id/pills_edit_input_medicine"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_medicines_view_pills_edit"
+        android:layout_width="330dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/recycler_medicines_view_pills_edit_examples"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/background_nav_bar"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/doctor_bottom_menu" />
+
+</RelativeLayout>

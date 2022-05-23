@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rooms_card_doctor"
+    android:layout_width="330dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="#FDC73C"
+    app:cardElevation="3dp"
+    app:contentPadding="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rooms_doctor_card_layout"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="2dp">
+
+    <TextView
+        android:id="@+id/rooms_card_doctor_room_title"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Room"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/rooms_card_doctor_room"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="2dp"
+        android:text="#25"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/rooms_card_doctor_room_title"
+        tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/rooms_card_doctor_info"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintRight_toLeftOf="@id/rooms_card_doctor_floor_int"
+            android:src="@drawable/ic_info"
+            />
+
+    <TextView
+        android:id="@+id/rooms_card_doctor_floor_int"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="25dp"
+        android:text="11"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/rooms_card_doctor_room"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/rooms_card_doctor_floor_title"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+        android:text="floor"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/rooms_card_doctor_floor_int"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/rooms_card_doctor_floor_title"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/rooms_card_doctor_price_title"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="State:"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/rooms_card_doctor_room_title"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/rooms_card_doctor_state_value"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:text="reserved"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/rooms_card_doctor_price_title"
+        app:layout_constraintTop_toBottomOf="@+id/rooms_card_doctor_room_title"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/rooms_card_doctor_from"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="18.03"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/rooms_card_doctor_state_value"
+        app:layout_constraintTop_toBottomOf="@id/rooms_card_doctor_room_title"
+        tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/rooms_card_doctor_due_to"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="20dp"
+            android:text="28.03"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/rooms_card_doctor_from"
+            app:layout_constraintTop_toBottomOf="@id/rooms_card_doctor_room_title"
+            tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/rooms_card_doctor_state_value"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/rooms_card_doctor_patient"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="20dp"
+        android:text="Patient: "
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/rooms_card_doctor_state_value"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/rooms_card_doctor_patient_name"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="Dr. Sam Smith"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/rooms_card_doctor_patient"
+        app:layout_constraintTop_toBottomOf="@id/rooms_card_doctor_state_value"
+        tools:ignore="MissingConstraints" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            app:layout_constraintLeft_toRightOf="@+id/rooms_card_doctor_patient_name"
+            app:layout_constraintTop_toBottomOf="@id/rooms_card_doctor_due_to"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/pink"
+            android:text="Edit"
+            android:id="@+id/rooms_card_doctor_btn_edit"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

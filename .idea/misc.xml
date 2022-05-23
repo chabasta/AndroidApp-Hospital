@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../layout/custom_preview.xml" value="0.4798439531859558" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Hospital/app/src/main/res/drawable/rounded_edittext.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Hospital/app/src/main/res/layout/activity_dashboard.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Hospital/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/drawable/dark_rounded_edittext.xml" value="0.1955" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/drawable/ic_camera.xml" value="0.2945" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/drawable/ic_dashboard.xml" value="0.301" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/drawable/ic_description.xml" value="0.3085" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/drawable/ic_exit.xml" value="0.2835" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/drawable/ic_medicine.xml" value="0.1955" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/drawable/ic_medicines.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/drawable/ic_more_info.xml" value="0.2295" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/drawable/rounded_edittext.xml" value="0.1955" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/drawable/selector.xml" value="0.259" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/drawable/selector_patient.xml" value="0.259" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/layout/activity_camera.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/layout/activity_create_medicine.xml" value="0.264" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/layout/activity_create_patient.xml" value="0.21403508771929824" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/layout/activity_create_room.xml" value="0.15625" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/layout/activity_dashboard.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/layout/activity_dashboard_doctor.xml" value="0.22" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/layout/activity_main2.xml" value="0.21403508771929824" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/layout/activity_medicines_doctor.xml" value="0.264" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/layout/activity_pacients_doctor.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/layout/activity_patient_day_pills.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/layout/activity_pills_edit.xml" value="0.264" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/layout/activity_reservations.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/layout/activity_room_edit.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/layout/activity_rooms_doctor.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/layout/activity_test.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/layout/day_pills_edit_card.xml" value="0.4" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/layout/medicine_card_doctor.xml" value="0.4" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/layout/medicine_pills_edit_card.xml" value="0.536" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/layout/medicines_card_pacient.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/layout/medicines_card_patient.xml" value="0.33" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/layout/medicines_day_card_patient.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/layout/name_medicine_card.xml" value="0.536" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/layout/new_reservation_card_doctor.xml" value="0.33" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/layout/notification_card_doctor.xml" value="0.5" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/layout/patient_card.xml" value="0.4" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/layout/reservations_card_patient.xml" value="0.5" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/layout/rooms_card_doctor.xml" value="0.2" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/layout/testtools.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/layout/toolbar.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/menu/doctor_bottom_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/menu/doctor_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/menu/patient_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/ASUS/OneDrive/Plocha/school/PDA/pda-hospital/app/src/main/res/menu/toolbar_menu.xml" value="0.36666666666666664" />
+        <entry key="app/src/main/res/drawable/ic_delete.xml" value="0.246" />
+        <entry key="app/src/main/res/layout/activity_camera.xml" value="0.333786231884058" />
+        <entry key="app/src/main/res/layout/activity_create_medicine.xml" value="0.333786231884058" />
+        <entry key="app/src/main/res/layout/activity_create_patient.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_create_room.xml" value="0.333786231884058" />
+        <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.333786231884058" />
+        <entry key="app/src/main/res/layout/activity_dashboard_doctor.xml" value="0.333786231884058" />
+        <entry key="app/src/main/res/layout/activity_day_pills.xml" value="0.333786231884058" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.333786231884058" />
+        <entry key="app/src/main/res/layout/activity_medicine_info.xml" value="0.333786231884058" />
+        <entry key="app/src/main/res/layout/activity_medicines_doctor.xml" value="0.333786231884058" />
+        <entry key="app/src/main/res/layout/activity_pacients_doctor.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_patient_chat.xml" value="0.333786231884058" />
+        <entry key="app/src/main/res/layout/activity_patient_day_pills.xml" value="0.333786231884058" />
+        <entry key="app/src/main/res/layout/activity_pills_edit.xml" value="0.2821557971014493" />
+        <entry key="app/src/main/res/layout/activity_reservations.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_rooms_doctor.xml" value="0.333786231884058" />
+        <entry key="app/src/main/res/layout/day_pills_edit_card.xml" value="0.333786231884058" />
+        <entry key="app/src/main/res/layout/medicine_card_doctor.xml" value="0.333786231884058" />
+        <entry key="app/src/main/res/layout/medicine_pills_edit_card.xml" value="0.333786231884058" />
+        <entry key="app/src/main/res/layout/medicines_card_patient.xml" value="0.333786231884058" />
+        <entry key="app/src/main/res/layout/medicines_day_card_patient.xml" value="0.333786231884058" />
+        <entry key="app/src/main/res/layout/name_medicine_card.xml" value="0.3833718244803695" />
+        <entry key="app/src/main/res/layout/new_reservation_card_doctor.xml" value="0.333786231884058" />
+        <entry key="app/src/main/res/layout/notification_card_doctor.xml" value="0.333786231884058" />
+        <entry key="app/src/main/res/layout/patient_card.xml" value="0.40942028985507245" />
+        <entry key="app/src/main/res/layout/reservations_card_patient.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/rooms_card_doctor.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/toolbar.xml" value="0.333786231884058" />
+        <entry key="app/src/main/res/menu/toolbar_menu.xml" value="0.35625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

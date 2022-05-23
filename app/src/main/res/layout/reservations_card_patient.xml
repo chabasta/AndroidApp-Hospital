@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reservations_card_patient"
+    android:layout_width="330dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="#FDC73C"
+    app:cardElevation="3dp"
+    app:contentPadding="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/reservations_patient_card_layout"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/reservations_day_card_patient_room_title"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Room"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/reservations_day_card_patient_room"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="2dp"
+            android:text="#25"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/reservations_day_card_patient_room_title"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/reservations_card_patient_description"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/description"
+            android:src="@drawable/ic_description"
+            app:layout_constraintLeft_toRightOf="@+id/reservations_day_card_patient_room"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/reservations_card_patient_floor_int"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="135dp"
+            android:layout_marginTop="25dp"
+            android:text="11"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/reservations_card_patient_description"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/reservations_card_patient_floor_title"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="25dp"
+            android:text="floor"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/reservations_card_patient_floor_int"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/reservations_card_patient_description"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/reservations_card_patient_price_title"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="Price:"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/reservations_day_card_patient_room"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/reservations_card_patient_price_int"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="10$ per night"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/reservations_card_patient_price_title"
+            app:layout_constraintTop_toBottomOf="@+id/reservations_day_card_patient_room"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/rooms_card_doctor_from"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="18.03"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/reservations_card_patient_price_int"
+            app:layout_constraintTop_toBottomOf="@id/reservations_day_card_patient_room"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/rooms_card_doctor_due_to"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="20dp"
+            android:text="28.03"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/rooms_card_doctor_from"
+            app:layout_constraintTop_toBottomOf="@id/reservations_day_card_patient_room"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/reservations_card_patient_price_int"
+            tools:ignore="MissingConstraints" />
+
+
+
+        <ImageView
+            android:id="@+id/reservations_card_patient_message_to_doctor"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/description"
+            android:src="@drawable/ic_message"
+            app:layout_constraintTop_toBottomOf="@id/reservations_card_patient_price_int"
+            tools:ignore="MissingConstraints" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

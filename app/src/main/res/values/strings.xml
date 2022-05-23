@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Hosital</string>
+    <string name="login_logo">Medical Reservation app</string>
+    <string name="login_username_label">Email</string>
+    <string name="login_password_label">Password</string>
+    <string name="login_username_hint">Write your email</string>
+    <string name="login_password_hint">Write your password</string>
+    <string name="button_text">Login</string>
+    <string name="dashboard_title">Dashboard</string>
+    <string name="reservations_title">Reservations</string>
+    <string name="camera_title">Camera</string>
+    <string name="rooms_title">Rooms</string>
+    <string name="medicines_title">Medicines</string>
+    <string name="pacients_title">Pacients</string>
+    <string name="exit">Exit</string>
+    <string name="description">Description</string>
+</resources>

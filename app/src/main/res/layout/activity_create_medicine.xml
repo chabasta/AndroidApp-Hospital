@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".doctor.CreateMedicine">
+
+    <!--    tool bar (top bar )-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_nav_bar"
+        app:menu="@menu/toolbar_menu"
+        app:title="Medicines"
+        app:titleTextColor="@color/white" />
+    <!--========================================================-->
+
+    <TextView
+        android:id="@id/create_medicines_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Medicines:"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+
+        />
+
+    <View
+        android:id="@+id/line0"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/create_medicines_title"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_doctor_create_new_medicine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/toolbar"
+        android:backgroundTint="@color/pink"
+        android:text="Add medicine"
+        android:textSize="13sp" />
+
+
+    <TextView
+        android:id="@+id/create_medicine_name_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/create_medicines_title"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:text="Name"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/create_medicine_name_input"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/create_medicine_name_title"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/rounded_edittext" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/create_medicine_name_input"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/create_medicine_about_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="About"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/create_medicine_about_input"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/create_medicine_about_title"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        tools:ignore="Deprecated,RtlSymmetry" />
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/create_medicine_about_input"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/create_medicine_httk_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line3"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="How and when to take it"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/create_medicine_httk_input"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/create_medicine_httk_title"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        tools:ignore="Deprecated,RtlSymmetry" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/background_nav_bar"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/doctor_bottom_menu" />
+
+</RelativeLayout>

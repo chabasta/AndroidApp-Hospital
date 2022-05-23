@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".patient.Dashboard"
+    android:background="@color/background"
+    >
+
+
+
+<!--    tool bar (top bar )-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        app:menu="@menu/toolbar_menu"
+        app:title="@string/dashboard_title"
+        app:titleTextColor="@color/white" />
+<!--========================================================-->
+
+
+
+
+
+    <!--    medicines by day-->
+    <TextView
+        android:id="@+id/days_recycler_view_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="20dp"
+        android:text="Medicines list of reservation:"
+        android:textColor="@color/white"
+
+        android:textSize="20sp" />
+
+    <!--    recyclerView-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_days_view"
+        android:layout_width="330dp"
+        android:layout_height="400dp"
+        android:layout_below="@+id/days_recycler_view_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+
+<!--    bottom nav bar-->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_nav_patient"
+        app:itemBackground="@color/background_nav_bar"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/patient_bottom_menu"
+        android:layout_alignParentBottom="true"
+    />
+<!--=======================================================-->
+
+</RelativeLayout>

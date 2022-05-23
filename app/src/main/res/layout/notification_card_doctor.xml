@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notification_card_doctor"
+    android:layout_width="330dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="3dp"
+    app:contentPadding="4dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/reservations_patient_card_layout"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/notifications_card_doctor_title"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Room"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/notifications_card_doctor_room"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="2dp"
+            android:text="#25"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/notifications_card_doctor_title"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/notifications_card_doctor_time"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="155dp"
+            android:text="15:47"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/notifications_card_doctor_room"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/notifications_card_doctor_close"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="exit"
+            android:src="@drawable/ic_close"
+            app:layout_constraintBottom_toTopOf="@+id/line1"
+            app:layout_constraintLeft_toRightOf="@+id/notifications_card_doctor_time"
+
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/notifications_card_doctor_title"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/notifications_card_doctor_message"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="20dp"
+            android:text="I need to ask you some questions,
+can you please come to my room ?"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/notifications_card_doctor_title"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pills_edit_name_madicine_card"
+    android:layout_width="330dp"
+    android:layout_height="45dp"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="#2E2E2E"
+    app:cardElevation="3dp"
+    app:contentPadding="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/patient_medicines_card_layout"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/medicines_card_patient_title"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/dashboard_title"
+            android:textColor="@color/pink"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/medicine_card_pill_count"
+            android:background="@drawable/rounded_edittext"
+            app:layout_constraintLeft_toRightOf="@id/medicines_card_patient_title"
+            android:textColorHint="@color/black"
+            android:textAlignment="center"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/medicines_card_patient_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:backgroundTint="@color/pink"
+            android:textSize="10sp"
+            android:text="add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/medicine_card_pill_count"
+            tools:ignore="MissingConstraints"
+            android:layout_marginBottom="6dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

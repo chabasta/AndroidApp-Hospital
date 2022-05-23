@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.hospital">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Hospital">
+        <activity
+            android:name=".patient.DayPillsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.MedicineInfo"
+            android:exported="false" />
+        <activity
+            android:name=".patient.PatientChat"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.CreateMedicine"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.PillsEdit"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.PatientDayPills"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.CreateRoom"
+            android:exported="false" />
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            tools:replace="android:screenOrientation" />
+        <activity
+            android:name=".doctor.CreatePatient"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.PacientsDoctorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.MedicinesDoctorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.RoomsDoctorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.DashboardDoctorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".patient.Camera"
+            android:exported="false" />
+        <activity
+            android:name=".patient.Reservations"
+            android:exported="false" />
+        <activity
+            android:name=".patient.Dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

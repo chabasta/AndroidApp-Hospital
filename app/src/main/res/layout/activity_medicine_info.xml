@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".doctor.MedicineInfo">
+
+    <!--    tool bar (top bar )-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_nav_bar"
+        app:title="Medicine information"
+        app:titleTextColor="@color/white"
+        app:menu="@menu/toolbar_menu"
+        />
+    <!--========================================================-->
+
+    <TextView
+        android:id="@+id/medicine_info_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Medicines:"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+
+        />
+
+    <ImageView
+        android:id="@+id/medicine_info_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/medicine_info_title"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_medicine" />
+
+    <View
+        android:id="@+id/line0"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/medicine_info_img"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/medicine_info_name_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/medicine_info_title"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/medicine_info_img"
+        android:text="Aklovir"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/medicine_info_about_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line0"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:text="About"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/medicine_info_name_input"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/medicine_info_about_title"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Aciclovir (or acyclovir) is an antiviral medicine.
+It treats infections caused by the herpes virus (herpes simplex), including:"
+        android:textColor="@color/white" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/medicine_info_name_input"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/medicine_info_httk_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:text="How and when to take it"
+        android:textColor="@color/white" />
+
+<TextView
+    android:id="@+id/medicine_info_httk"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/medicine_info_httk_title"
+    android:layout_marginHorizontal="30dp"
+    android:layout_marginTop="10dp"
+    android:text="It's important to start taking (or using) this medicine as soon as you get the first signs of infection. A cold sore usually starts with a tingling, itching or burning feeling."
+    android:textColor="@color/white"
+    android:textColorHint="@color/black" />
+
+<View
+android:id="@+id/line3"
+android:layout_width="match_parent"
+android:layout_height="1dp"
+android:layout_below="@id/medicine_info_httk"
+android:layout_marginHorizontal="15dp"
+android:layout_marginTop="20dp"
+android:background="@color/white"
+tools:ignore="MissingConstraints" />
+
+<TextView
+android:id="@+id/medicine_info_sideef_title"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_below="@+id/line3"
+android:layout_marginStart="30dp"
+android:layout_marginTop="15dp"
+android:text="Side effects"
+android:textColor="@color/white" />
+
+
+<TextView
+android:id="@+id/medicine_info_sideef_info"
+android:layout_width="match_parent"
+android:layout_height="70dp"
+android:layout_below="@+id/medicine_info_sideef_title"
+android:layout_marginHorizontal="30dp"
+android:layout_marginTop="10dp"
+android:text="Many people have no side effects at all, or only minor ones."
+android:textColor="@color/white" />
+
+
+<com.google.android.material.bottomnavigation.BottomNavigationView
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:id="@+id/bottom_nav_doctor"
+app:itemBackground="@color/background_nav_bar"
+app:itemTextColor="@drawable/selector"
+app:itemIconTint="@drawable/selector"
+app:menu="@menu/doctor_bottom_menu"
+android:layout_alignParentBottom="true"
+app:labelVisibilityMode="labeled"
+    />
+
+
+    </RelativeLayout>
